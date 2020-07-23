@@ -56,11 +56,9 @@ select * from tb_funcionarios where nome like "%C%";
 select tb_funcionarios.nome, tb_cargo.profissao
 from tb_funcionarios
 inner join tb_cargo on tb_cargo.id = tb_funcionarios.cargo_id
-
-select tb_funcionarios.nome, tb_cargo.profissao 
-from tb_funcionarios
-inner join tb_cargo on tb_cargo.id = tb_funcionarios.cargo_id
 where tb_cargo.profissao = "Desenvolvedor Full-Stack"
+
+
 
  
 
